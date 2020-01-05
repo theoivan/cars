@@ -1,0 +1,9 @@
+C:\Users\x64\source\repos\CarsWebsite\Database\bin\Debug\Database.dacpac
+C:\Users\x64\source\repos\CarsWebsite\Database\bin\Debug\Database.dll
+C:\Users\x64\source\repos\CarsWebsite\Database\bin\Debug\Database.pdb
+C:\Users\x64\source\repos\CarsWebsite\Database\obj\Debug\Model.xml
+C:\Users\x64\source\repos\CarsWebsite\Database\obj\Debug\refactor.xml
+C:\Users\x64\source\repos\CarsWebsite\Database\obj\Debug\postdeploy.sql
+C:\Users\x64\source\repos\CarsWebsite\Database\obj\Debug\predeploy.sql
+C:\Users\x64\source\repos\CarsWebsite\Database\obj\Debug\Database.dll
+C:\Users\x64\source\repos\CarsWebsite\Database\obj\Debug\Database.pdb

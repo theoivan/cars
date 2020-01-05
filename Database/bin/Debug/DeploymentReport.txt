@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Cars] (Table)
+       [dbo].[Images] (Table)
+       [dbo].[Roles] (Table)
+       [dbo].[Users] (Table)
+       [dbo].[Users].[IX_ApplicationUser_NormalizedUserName] (Index)
+       [dbo].[Users].[IX_ApplicationUser_NormalizedEmail] (Index)
+       [dbo].[UsersRoles] (Table)
+       Foreign Key: unnamed constraint on [dbo].[Cars] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Images] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[UsersRoles] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[UsersRoles] (Foreign Key)
+
+** Supporting actions
