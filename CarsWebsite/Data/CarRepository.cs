@@ -1,11 +1,10 @@
-﻿using API.Models;
-using Dapper;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Threading.Tasks;
+using API.Models;
+using Dapper;
 
 namespace API.Data
 {
@@ -20,6 +19,11 @@ namespace API.Data
 
         public Car Add(Car car)
         {
+            if (car == null)
+            {
+                throw new ArgumentNullException(nameof(car));
+            }
+
             var sql = "INSERT INTO Cars (Brand, Model, RegistrationNumber, UserId, Combustible, FirstRegistrationDate, EngineSize, Transmission, OriginCountry, " +
                 "NumberOfDoors, NumberOfSeats, EmissionStandard, Colour, BodyType, Power, ImagePath) VALUES (@Brand, @Model, @RegistrationNumber, @UserId, @Combustible, " +
                 "@FirstRegistrationDate, @EngineSize, @Transmission, @OriginCountry, @NumberOfDoors, @NumberOfSeats, @EmissionStandard, @Colour, @BodyType, @Power, " +

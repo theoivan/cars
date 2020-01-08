@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\x64\\source\\repos\\CarsWebsite\\CarsWebsite\\API.csproj": {}
+    "C:\\Users\\theodor.ivan\\Desktop\\cars\\CarsWebsite\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\x64\\source\\repos\\CarsWebsite\\CarsWebsite\\API.csproj": {
+    "C:\\Users\\theodor.ivan\\Desktop\\cars\\CarsWebsite\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\x64\\source\\repos\\CarsWebsite\\CarsWebsite\\API.csproj",
+        "projectUniqueName": "C:\\Users\\theodor.ivan\\Desktop\\cars\\CarsWebsite\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\x64\\source\\repos\\CarsWebsite\\CarsWebsite\\API.csproj",
-        "packagesPath": "C:\\Users\\x64\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\x64\\source\\repos\\CarsWebsite\\CarsWebsite\\obj\\",
+        "projectPath": "C:\\Users\\theodor.ivan\\Desktop\\cars\\CarsWebsite\\API.csproj",
+        "packagesPath": "C:\\Users\\theodor.ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\theodor.ivan\\Desktop\\cars\\CarsWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\x64\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\theodor.ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

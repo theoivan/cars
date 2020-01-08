@@ -1,11 +1,8 @@
-﻿using API.Models;
-using Dapper;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
+using API.Models;
+using Dapper;
 
 namespace API.Data
 {
@@ -20,6 +17,11 @@ namespace API.Data
 
         public User Add(User user)
         {
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+
             var sql = "INSERT INTO Users (Username, Email, PasswordHash, Salt)" +
                 "VALUES (@Username, @Email, @PasswordHash, @Salt); " +
                 "SELECT CAST(SCOPE_IDENTITY() as int)";

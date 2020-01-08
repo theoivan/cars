@@ -1,18 +1,15 @@
-﻿using API.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
+using API.Data;
 
 namespace API.Services
 {
-    public class RoleService: IRoleService
+    public class RoleService : IRoleService
     {
         private IRoleRepository _roleRepository;
 
         public RoleService(IRoleRepository roleRepository)
         {
-            _roleRepository = roleRepository;
+            this._roleRepository = roleRepository;
         }
 
         public void AssignRoleToUser(int userId, int roleId)
