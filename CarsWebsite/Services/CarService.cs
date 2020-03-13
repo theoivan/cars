@@ -1,47 +1,47 @@
-﻿using System.Collections.Generic;
-using API.Data;
-using API.Models;
-
-namespace API.Services
+﻿namespace API.Services
 {
+    using System.Collections.Generic;
+    using API.Data;
+    using API.Models;
+
     public class CarService : ICarService
     {
-        private ICarRepository _carRepository;
+        private readonly ICarRepository carRepository;
 
         public CarService(ICarRepository carRepository)
         {
-            this._carRepository = carRepository;
+            this.carRepository = carRepository;
         }
 
         public Car Add(Car car)
         {
-            this._carRepository.Add(car);
+            this.carRepository.Add(car);
             return car;
         }
 
         public void Delete(int id)
         {
-            this._carRepository.Remove(id);
+            this.carRepository.Remove(id);
         }
 
         public Car Find(int id)
         {
-            return this._carRepository.Find(id);
+            return this.carRepository.Find(id);
         }
 
         public List<Car> GetAll()
         {
-            return this._carRepository.GetAll();
+            return this.carRepository.GetAll();
         }
 
         public List<Car> GetAllForUser(int userId)
         {
-            return this._carRepository.GetAllForUserId(userId);
+            return this.carRepository.GetAllForUserId(userId);
         }
 
         public Car Update(Car car)
         {
-            return this._carRepository.Update(car);
+            return this.carRepository.Update(car);
         }
     }
 }

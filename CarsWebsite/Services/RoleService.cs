@@ -1,30 +1,30 @@
-﻿using System;
-using API.Data;
-
-namespace API.Services
+﻿namespace API.Services
 {
+    using System;
+    using API.Data;
+
     public class RoleService : IRoleService
     {
-        private IRoleRepository _roleRepository;
+        private readonly IRoleRepository roleRepository;
 
         public RoleService(IRoleRepository roleRepository)
         {
-            this._roleRepository = roleRepository;
+            this.roleRepository = roleRepository;
         }
 
         public void AssignRoleToUser(int userId, int roleId)
         {
-            this._roleRepository.AssignRoleToUser(userId, roleId);
+            this.roleRepository.AssignRoleToUser(userId, roleId);
         }
 
         public string GetRoleForUserByUserId(int id)
         {
-            return this._roleRepository.GetRoleForUserByUserId(id);
+            return this.roleRepository.GetRoleForUserByUserId(id);
         }
 
         public int GetRoleIdByRoleName(string roleName)
         {
-            return this._roleRepository.GetRoleIdByRoleName(roleName);
+            return this.roleRepository.GetRoleIdByRoleName(roleName);
         }
     }
 }

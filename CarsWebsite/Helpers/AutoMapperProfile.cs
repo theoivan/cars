@@ -1,11 +1,11 @@
-﻿using System;
-using System.Globalization;
-using API.Dtos;
-using API.Models;
-using AutoMapper;
-
-namespace API.Helpers
+﻿namespace API.Helpers
 {
+    using System;
+    using System.Globalization;
+    using API.Dtos;
+    using API.Models;
+    using AutoMapper;
+
     public class AutoMapperProfile : Profile
     {
         public AutoMapperProfile()

@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using API.Models;
-
-namespace API.Services
+﻿namespace API.Services
 {
+    using System.Collections.Generic;
+    using API.Models;
+
     public interface ICarService
     {
         Car Add(Car car);

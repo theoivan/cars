@@ -1,14 +1,14 @@
-﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using API.Models;
-using Dapper;
-
-namespace API.Data
+﻿namespace API.Data
 {
+    using System;
+    using System.Data;
+    using System.Data.SqlClient;
+    using API.Models;
+    using Dapper;
+
     public class UserRepository : IUserRepository
     {
-        private IDbConnection db;
+        private readonly IDbConnection db;
 
         public UserRepository(string connStrings)
         {

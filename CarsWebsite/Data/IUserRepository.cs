@@ -1,8 +1,7 @@
-﻿using System;
-using API.Models;
-
-namespace API.Data
+﻿namespace API.Data
 {
+    using API.Models;
+
     public interface IUserRepository
     {
         User FindByUsername(string username);

@@ -1,8 +1,7 @@
-﻿using System;
-using API.Models;
-
-namespace API.Services
+﻿namespace API.Services
 {
+    using API.Models;
+
     public interface IUserService
     {
         User Register(User user, string password);

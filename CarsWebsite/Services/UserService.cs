@@ -1,16 +1,16 @@
-﻿using System;
-using API.Data;
-using API.Models;
-
-namespace API.Services
+﻿namespace API.Services
 {
+    using System;
+    using API.Data;
+    using API.Models;
+
     public class UserService : IUserService
     {
-        private IUserRepository _userRepository;
+        private readonly IUserRepository userRepository;
 
         public UserService(IUserRepository userRepository)
         {
-            this._userRepository = userRepository;
+            this.userRepository = userRepository;
         }
 
         public User Register(User user, string password)
@@ -25,7 +25,7 @@ namespace API.Services
                 throw new Exception();
             }
 
-            if (_userRepository.FindByUsername(user.Username) != null)
+            if (this.userRepository.FindByUsername(user.Username) != null)
             {
                 throw new Exception("Username \"" + user.Username + "\" is already taken");
             }
@@ -34,13 +34,13 @@ namespace API.Services
             CreatePasswordHash(password, out passwordHash, out passwordSalt);
             user.PasswordHash = passwordHash;
             user.Salt = passwordSalt;
-            this._userRepository.Add(user);
+            this.userRepository.Add(user);
             return user;
         }
 
         public User GetById(int id)
         {
-            return this._userRepository.FindById(id);
+            return this.userRepository.FindById(id);
         }
 
         public User Login(string username, string password)
@@ -50,7 +50,7 @@ namespace API.Services
                 return null;
             }
 
-            var user = this._userRepository.FindByUsername(username);
+            var user = this.userRepository.FindByUsername(username);
 
             if (user == null)
             {

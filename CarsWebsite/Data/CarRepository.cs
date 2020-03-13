@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
-using API.Models;
-using Dapper;
-
-namespace API.Data
+﻿namespace API.Data
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.SqlClient;
+    using System.Linq;
+    using API.Models;
+    using Dapper;
+
     public class CarRepository : ICarRepository
     {
-        private IDbConnection db;
+        private readonly IDbConnection db;
 
         public CarRepository(string connStrings)
         {

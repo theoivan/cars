@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using API.Models;
-
-namespace API.Data
+﻿namespace API.Data
 {
+    using System.Collections.Generic;
+    using API.Models;
+
     public interface ICarRepository
     {
         Car Find(int id);

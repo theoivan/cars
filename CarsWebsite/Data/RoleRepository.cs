@@ -1,12 +1,12 @@
-﻿using System.Data;
-using System.Data.SqlClient;
-using Dapper;
-
-namespace API.Data
+﻿namespace API.Data
 {
+    using System.Data;
+    using System.Data.SqlClient;
+    using Dapper;
+
     public class RoleRepository : IRoleRepository
     {
-        private IDbConnection db;
+        private readonly IDbConnection db;
 
         public RoleRepository(string connStrings)
         {
