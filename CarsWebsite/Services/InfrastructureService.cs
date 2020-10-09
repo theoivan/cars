@@ -20,6 +20,11 @@
             this.infrastructureRepository = infrastructureRepository;
         }
 
+        public List<string> GetAllBodyTypes()
+        {
+            return this.infrastructureRepository.GetAllBodyTypes();
+        }
+
         public List<string> GetAllCountries()
         {
             return this.infrastructureRepository.GetAllCountries();

@@ -15,7 +15,6 @@
     [EmissionStandard] NVARCHAR(15) NULL, 
     [Colour] NVARCHAR(50) NULL, 
     [BodyType] NVARCHAR(50) NULL, 
-    [Power] INT NULL, 
-    [ImagePath] NVARCHAR(MAX) NULL
+    [Power] INT NULL
 )
 

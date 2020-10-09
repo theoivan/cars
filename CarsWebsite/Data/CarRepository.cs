@@ -25,9 +25,9 @@
             }
 
             var sql = "INSERT INTO Cars (Brand, Model, RegistrationNumber, UserId, Combustible, FirstRegistrationDate, EngineSize, Transmission, OriginCountry, " +
-                "NumberOfDoors, NumberOfSeats, EmissionStandard, Colour, BodyType, Power, ImagePath) VALUES (@Brand, @Model, @RegistrationNumber, @UserId, @Combustible, " +
-                "@FirstRegistrationDate, @EngineSize, @Transmission, @OriginCountry, @NumberOfDoors, @NumberOfSeats, @EmissionStandard, @Colour, @BodyType, @Power, " +
-                "@ImagePath); SELECT CAST(SCOPE_IDENTITY() as int)";
+                "NumberOfDoors, NumberOfSeats, EmissionStandard, Colour, BodyType, Power) VALUES (@Brand, @Model, @RegistrationNumber, @UserId, @Combustible, " +
+                "@FirstRegistrationDate, @EngineSize, @Transmission, @OriginCountry, @NumberOfDoors, @NumberOfSeats, @EmissionStandard, @Colour, @BodyType, @Power" +
+                "); SELECT CAST(SCOPE_IDENTITY() as int)";
             var id = this.db.QueryFirstOrDefaultAsync<int>(sql, car).Result;
             car.CarId = id;
             return car;

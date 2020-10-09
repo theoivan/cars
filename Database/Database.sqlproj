@@ -68,6 +68,8 @@
     <Build Include="dbo\Tables\Countries.sql" />
     <Build Include="dbo\Tables\EmissionStandards.sql" />
     <Build Include="dbo\Tables\FuelTypes.sql" />
+    <Build Include="dbo\Tables\BodyTypes.sql" />
+    <Build Include="dbo\Tables\CarImages.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Scripts\CountriesInsert.sql" />

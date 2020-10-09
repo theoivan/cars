@@ -15,6 +15,11 @@
             this.db = new SqlConnection(connStrings);
         }
 
+        public List<string> GetAllBodyTypes()
+        {
+            return this.db.QueryAsync<string>("SELECT BodyType FROM BodyTypes").Result.ToList();
+        }
+
         public List<string> GetAllCountries()
         {
             return this.db.QueryAsync<string>("SELECT Country FROM Countries").Result.ToList();

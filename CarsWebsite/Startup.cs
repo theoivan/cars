@@ -94,11 +94,13 @@ namespace CarsWebsite
             services.AddScoped<IUserRepository>(_ => new UserRepository(dbConnectionString));
             services.AddScoped<IRoleRepository>(_ => new RoleRepository(dbConnectionString));
             services.AddScoped<IInfrastructureRepository>(_ => new InfrastructureRepository(dbConnectionString));
+            services.AddScoped<IImageRepository>(_ => new ImageRepository(dbConnectionString));
 
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<ICarService, CarService>();
             services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<IInfrastructureService, InfrastructureService>();
+            services.AddTransient<IImageService, ImageService>();
 
             // configure strongly typed settings objects
             var appSettingsSection = this.Configuration.GetSection("AppSettings");

@@ -8,6 +8,8 @@
 
         List<string> GetAllFuelTypes();
 
+        List<string> GetAllBodyTypes();
+
         List<string> GetAllEmissionStandards();
 
         List<string> GetAllTransmissionTypes();

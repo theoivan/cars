@@ -1,5 +1,7 @@
 ﻿namespace API.Dtos
 {
+    using System.Collections.Generic;
+
     public class CarDto
     {
         public int CarId { get; set; }
@@ -34,6 +36,6 @@
 
         public int Power { get; set; }
 
-        public string ImagePath { get; set; }
+        public List<string> ImagesPath { get; set; }
     }
 }

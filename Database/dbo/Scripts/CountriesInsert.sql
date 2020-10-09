@@ -278,3 +278,25 @@ BEGIN
    INSERT INTO FuelTypes VALUES ('LPG');
    INSERT INTO FuelTypes VALUES ('Hydrogen');
 END
+
+IF NOT EXISTS (SELECT TOP 1 * FROM BodyTypes )
+BEGIN
+   INSERT INTO BodyTypes VALUES ('Buggy');
+   INSERT INTO BodyTypes VALUES ('Convertible / cabriolet');
+   INSERT INTO BodyTypes VALUES ('Coupé');
+   INSERT INTO BodyTypes VALUES ('Flower car');
+   INSERT INTO BodyTypes VALUES ('Hatchback / liftback');
+   INSERT INTO BodyTypes VALUES ('Hearse / funeral coach');
+   INSERT INTO BodyTypes VALUES ('Kombi');
+   INSERT INTO BodyTypes VALUES ('Limousine');
+   INSERT INTO BodyTypes VALUES ('Microvan');
+   INSERT INTO BodyTypes VALUES ('Minivan');
+   INSERT INTO BodyTypes VALUES ('Panel van');
+   INSERT INTO BodyTypes VALUES ('Pickup truck / pickup');
+   INSERT INTO BodyTypes VALUES ('Roadster');
+   INSERT INTO BodyTypes VALUES ('Sedan / saloon');
+   INSERT INTO BodyTypes VALUES ('Shooting-brake');
+   INSERT INTO BodyTypes VALUES ('Station wagon / estate car');
+   INSERT INTO BodyTypes VALUES ('Targa top');
+   INSERT INTO BodyTypes VALUES ('Ute / coupe utility ');
+END

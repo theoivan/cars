@@ -6,6 +6,8 @@
     {
         List<string> GetAllCountries();
 
+        List<string> GetAllBodyTypes();
+
         List<string> GetAllFuelTypes();
 
         List<string> GetAllEmissionStandards();

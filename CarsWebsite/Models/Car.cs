@@ -1,6 +1,7 @@
 ﻿namespace API.Models
 {
     using System;
+    using System.Collections.Generic;
 
     public class Car
     {
@@ -36,6 +37,6 @@
 
         public int Power { get; set; }
 
-        public string ImagePath { get; set; }
+        public List<Image> ImagesPath { get; set; }
     }
 }

@@ -44,6 +44,20 @@
             return this.Ok(fuelTypesSelectItemList);
         }
 
+        [HttpGet("allBodyTypes")]
+        public IActionResult GetAllBodyTypes()
+        {
+            var bodyTypes = this.infrastructureService.GetAllBodyTypes();
+
+            var bodyTypesSelectItemList = bodyTypes.Select(x => new SelectItemString()
+            {
+                Value = x,
+                Label = x,
+            }).ToList();
+
+            return this.Ok(bodyTypesSelectItemList);
+        }
+
         [HttpGet("allTransmissionTypes")]
         public IActionResult GetAllTransmissionTypes()
         {
